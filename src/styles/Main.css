@@ -1,0 +1,42 @@
+.list {
+    padding-top: 57px;
+    padding-bottom: 125px;
+    padding-left: 27px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    background: #282D35;
+    background-image: url('../assets/reactjs-icon.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.list--title {
+    margin-top: 0;
+    margin-bottom: 46px;
+    font-weight: 700;
+    font-size: 39.06px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+}
+
+.list--list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 390px;
+}
+
+.list--list li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
+
+.list--list li {
+    padding-top: 20.36px;
+    vertical-align: middle;
+}
+
+.list--list li:first-of-type {
+    padding-top: 0;
+}
