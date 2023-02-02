@@ -1,17 +1,20 @@
 import "../styles/Navbar.css";
 import reactLogo from "../assets/react.svg";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
-    <header>
-      <nav className="navbar">
-        <div className="navbar--logo_container">
-          <img src={reactLogo} alt="React logo" className="navbar--logo" />
-          <h1 className="navbar--logo_text">ReactFacts</h1>
+    <nav className={props.darkMode ? "dark" : ""}>
+      <img className="nav--logo_icon" src={reactLogo} />
+      <h3 className="nav--logo_text">ReactFacts</h3>
+
+      <div className="toggler">
+        <p className="toggler--light">Light</p>
+        <div className="toggler--slider" onClick={props.toggleDarkMode}>
+          <div className="toggler--slider--circle"></div>
         </div>
-        <h2 className="navbar--title">React Course - Project 1</h2>
-      </nav>
-    </header>
+        <p className="toggler--dark">Dark</p>
+      </div>
+    </nav>
   );
 };
 

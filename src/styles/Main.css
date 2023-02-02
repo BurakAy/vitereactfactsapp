@@ -1,42 +1,37 @@
-.list {
-    padding-top: 57px;
-    padding-bottom: 125px;
-    padding-left: 27px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    color: #FFFFFF;
-    background: #282D35;
-    background-image: url('../assets/reactjs-icon.png');
+/* MAIN styles */
+main {
+    padding: 57px 27px;
+    background-image: url("../assets/react-icon-light.png"); 
     background-repeat: no-repeat;
     background-position: right center;
+    flex: 1 1 auto;
+    background-color: white;
+    color: #2B283A;
 }
 
-.list--title {
-    margin-top: 0;
-    margin-bottom: 46px;
-    font-weight: 700;
-    font-size: 39.06px;
-    line-height: 47px;
+main.dark {
+    background-image: url("../assets/react-icon-dark.png"); 
+    background-color: #282D35;
+    color: white;    
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
     letter-spacing: -0.05em;
 }
 
-.list--list {
-    font-weight: 400;
-    font-size: 16px;
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--facts > li {
     line-height: 19px;
-    max-width: 390px;
+    padding-block: 10px;
 }
 
-.list--list li::marker {
-    color: #61DAFB;
+.main--facts > li::marker {
     font-size: 1.4rem;
-}
-
-.list--list li {
-    padding-top: 20.36px;
-    vertical-align: middle;
-}
-
-.list--list li:first-of-type {
-    padding-top: 0;
+    color: #61DAFB;
 }
